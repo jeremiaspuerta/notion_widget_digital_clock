@@ -1,11 +1,28 @@
 html{
-  height: 350px;
+  height: 100vh;
 }
 
 .container {
-  height: 35vh;
+  height: 100%;
   background: linear-gradient(to left, #a531dc, #4300b1);
   border-radius: 20px;
+
+}
+
+
+
+#day {
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  right: 0;
+  font-family: "Montserrat", monospace;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #clock {
@@ -14,25 +31,12 @@ html{
   position: absolute;
   left: 0;
   right: 0;
-  top: 110px;
+  top: 40px;
   font-family: "Montserrat", monospace;
   text-align: center;
   color: white;
   font-size: 100px;
   font-weight: 700;
-}
-
-#day {
-  height: 100px;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  font-family: "Montserrat", monospace;
-  text-align: center;
-  color: white;
-  font-size: 100px;
-  font-weight: 400;
 }
 
 .item {
@@ -42,7 +46,7 @@ html{
   position: absolute;
   left: 0;
   right: 0;
-  top: 210px;
+  top: 150px;
   font-family: "Montserrat", monospace;
   text-align: center;
   color: white;

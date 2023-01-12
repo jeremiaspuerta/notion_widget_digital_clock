@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     function time() {
-        var meridiem = "AM";
+        // var meridiem = "AM";
         var currentTime = new Date();
         var hour = currentTime.getHours();
         if (hour < 10)
             hour = "0" + hour;
-        if (hour > 12) {
-            hour = hour - 12;
-            meridiem = "PM";
-        }
+        // if (hour > 12) {
+        //     hour = hour - 12;
+        //     // meridiem = "PM";
+        // }
         if (hour === 0)
-            hour = 12;
+            hour = 00;
 
         var minute = currentTime.getMinutes();
         if (minute < 10)
@@ -66,18 +66,18 @@ document.addEventListener("DOMContentLoaded", function() {
         var year = currentTime.getFullYear();
 
         var date = currentTime.getDate();
-
+        
         var yearDiv = document.getElementById('year');
         var monthDiv = document.getElementById('month');
         var clockDiv = document.getElementById('clock');
         var dayDiv = document.getElementById('day');
-        var dateDiv = document.getElementById('date');
+        // var dateDiv = document.getElementById('date');
 
-        dayDiv.innerText = day;
-        clockDiv.innerText = hour + ":" + minute + ":" + second + " " + meridiem;
-        monthDiv.innerText = month;
-        yearDiv.innerText = year;
-        dateDiv.innerText = date;
+        dayDiv.innerText = `${day} ${date}`;
+        clockDiv.innerText = hour + ":" + minute + ":" + second + " ";
+        // monthDiv.innerText = month;
+        // yearDiv.innerText = year;
+        // dateDiv.innerText = date;
     }
     time();
     setInterval(time, 1000);
